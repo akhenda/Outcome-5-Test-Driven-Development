@@ -1,25 +1,5 @@
 import unittest
-
-
-def data_type(anything=None):
-  if anything is None:
-	  return'no value'
-  elif type(anything) == bool:
-    return anything
-  elif type(anything) == int:
-    if anything < 100:
-      return 'less than 100'
-    elif anything is 100:
-      return 'equal to 100'
-    elif anything > 100:
-      return 'more than 100'
-  elif type(anything) == list:
-    if len(anything)>=3:
-		  return anything[2]
-    else:
-		  return None
-  elif anything.isalpha() is True:
-		return len(anything)
+from data_type import data_type
 
 
 class DataTypeTestCase(unittest.TestCase):
@@ -46,8 +26,5 @@ class DataTypeTestCase(unittest.TestCase):
     self.assertEqual(6, data_type('andela'))
 
 
-def main():
-  unittest.main()
-
 if __name__ == "__main__":
-  main()
+  unittest.main()
