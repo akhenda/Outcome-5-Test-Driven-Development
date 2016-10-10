@@ -4,4 +4,10 @@ This repo has been created as a demonstration of Test-Driven Development skill a
 
 ## This repo contains:
 1. At least 10 test cases for a FizzBuzz function.
-2. At least 20 test cases for OOP assignment.
+2. A function called data_type, that takes one argument, compares and return results, based on the argument supplied to the function.  It also has tests that must pass to produce the perfect function that accounts for all expectations.
+
+- For strings, return its length.
+- For None return string 'no value'
+- For booleans return the boolean
+- For integers return a string showing how it compares to hundred e.g. For 67 return 'less than 100' for 4034 return 'more than 100' or equal to 100 as the case may be
+- For lists return the 3rd item, or None if it doesn't exist
