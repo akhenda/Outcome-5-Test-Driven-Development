@@ -1,15 +1,5 @@
 import unittest
-
-
-def fizz_buzz(number):
-	if number % 3 == 0 and number % 5 == 0:
-		return 'FizzBuzz'
-	elif number % 5 == 0:
-		return 'Buzz'
-	elif number % 3 == 0:
-		return 'Fizz'
-	else:
-		return number
+from fizz_buzz import fizz_buzz
 
 
 class FizzBuzzClassTest(unittest.TestCase):
@@ -40,8 +30,5 @@ class FizzBuzzClassTest(unittest.TestCase):
         self.assertEqual(fizz_buzz(8), 8, msg='should return the number if its in divisible by neither 3 or 5')
 
 
-def main():
-	unittest.main()
-
 if __name__ == "__main__":
-	main()
+	unittest.main()
